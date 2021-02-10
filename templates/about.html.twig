@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>< volverse código ></title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <script defer src="js/about.js" type="text/javascript"></script>
+    <link href="styles/index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="main-about">
+      <div class="nav flex border--purple">
+        <div class="logo">
+          <h4><a href="{{ path('capsules') }}">< volverse código ></a></h4>
+        </div>
+        <div class="nav-menu flex">
+          <a class="nav-menu__item" href="#">Quienes Somos</a>
+          <a class="nav-menu__item search">Search</a>
+        </div>
+      </div>
+      <div class="width-container about-container">
+        <h4 class="intro-title">Quiénes Somos</h4>
+        <div class="letters">
+          <h3 class="link" id="JB" onclick="mostrarCapsula(this)">JB</h3>
+          <h3 class="link" id="ET" onclick="mostrarCapsula(this)">ET</h3>
+          <h3 class="link" id="JM" onclick="mostrarCapsula(this)">JM</h3>
+          <h3 class="link" id="VB" onclick="mostrarCapsula(this)">VB</h3>
+          <h3 class="link" id="RV" onclick="mostrarCapsula(this)">RV</h3>
+          <h3 class="link" id="RDB" onclick="mostrarCapsula(this)">RDB</h3>
+        </div>
+      </div>
+    </main>
+    <div class="modal-container">
+      <div class="modal-content">
+        <div id="file"></div>
+        <div id="file-info">
+          <p id="close-capsule" onclick="cerrarCapsula()">X</p>
+          <p id="open-date"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

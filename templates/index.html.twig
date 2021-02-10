@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>< volverse código ></title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <script defer src="js/index.js" type="text/javascript"></script>
+  <link href="styles/index.css" rel="stylesheet" />
+</head>
+<body>
+<div class="video-container">
+      <audio id="index-audio" src="assets/audio/video_audio.mp3"></audio>
+
+      <video playsinline autoplay muted class="bgvid">
+        <source src="assets/videos/intro.mp4" type="video/mp4" />
+      </video>
+
+      <div class="btn-container">
+        <a href="{{ path('intro') }}#" class="btn border--white">Crear Cápsula</a>
+        <a href="{{ path('capsules') }}" class="btn border--white">Ver Cápsulas</a>
+      </div>
+    </div>
+
+    <div class="play-container">
+      <div class="play-content">
+        <img
+          src="assets/img/play-button.png"
+          alt="play button"
+          id="play-button"
+        />
+      </div>
+    </div>
+</body>
+</html>
